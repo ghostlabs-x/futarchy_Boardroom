@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 0, 0, 0;
+  --card-bg: 15, 15, 15;
+  --border-color: 40, 40, 40;
+  --accent-color: 255, 72, 72;
+  --accent-hover: 220, 38, 38;
+}
+
+
+body {
+  @apply bg-black text-white;
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .card {
+    @apply bg-[#0f0f0f] border border-[#282828] rounded-lg;
+  }
+  
+  .card-hover {
+    @apply card transition-all hover:border-[#404040] hover:shadow-lg;
+  }
+}
+
