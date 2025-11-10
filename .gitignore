@@ -39,4 +39,8 @@ out/
 *.swp
 *.swo
 *~
+*.code-workspace
+
+# Development Notes
+DevNotes.md
 
